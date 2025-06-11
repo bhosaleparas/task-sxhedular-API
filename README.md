@@ -89,8 +89,69 @@ The server will start on:
   ]
 }
 ```
-
 ---
 
-You can repeat the same structure for **SJF** and **Priority Scheduling** examples as well if needed.
+## 🚀 Send the Request
+
+Click the **"Send"** button in your API testing tool.
+---
+
+## ✅ Check the Response
+
+A successful response will look like this:
+
+```json
+{
+  "success": true,
+  "algorithm": "RR",
+  "timeQuantum": 2,
+  "processes": [
+    {
+      "pid": "P1",
+      "arrivalTime": 0,
+      "burstTime": 5,
+      "priority": 0,
+      "waitingTime": 7,
+      "turnaroundTime": 12,
+      "startTime": 0,
+      "finishTime": 12
+    },
+    {
+      "pid": "P2",
+      "arrivalTime": 1,
+      "burstTime": 3,
+      "priority": 0,
+      "waitingTime": 5,
+      "turnaroundTime": 8,
+      "startTime": 1,
+      "finishTime": 9
+    },
+    {
+      "pid": "P3",
+      "arrivalTime": 2,
+      "burstTime": 8,
+      "priority": 0,
+      "waitingTime": 9,
+      "turnaroundTime": 17,
+      "startTime": 2,
+      "finishTime": 19
+    },
+    {
+      "pid": "P4",
+      "arrivalTime": 3,
+      "burstTime": 6,
+      "priority": 0,
+      "waitingTime": 13,
+      "turnaroundTime": 19,
+      "startTime": 3,
+      "finishTime": 22
+    }
+  ],
+  "executionOrder": ["P1", "P2", "P3", "P4", "P1", "P3", "P4", "P1", "P3", "P4", "P3"],
+  "averageWaitingTime": 8.5,
+  "averageTurnaroundTime": 14.0
+}
+```
+
+---
 
